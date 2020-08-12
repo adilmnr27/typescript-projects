@@ -11,7 +11,12 @@ interface TODO {
 
 axios.get(url).then((res) => {
   const { id, title, completed } = res.data as TODO;
-  console.log(`The is ${id}.
+  logFunction(id, title, completed);
+});
+
+//id:number This is type annotation
+const logFunction = (id: number, title: string, completed: boolean) => {
+  console.log(`The id is ${id}.
   The title is ${title}
   The status is ${completed}`);
-});
+};
