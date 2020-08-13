@@ -23,7 +23,7 @@ class House {
   print() {}
 }
 
-class Car {
+class Van {
   print() {}
 }
 
